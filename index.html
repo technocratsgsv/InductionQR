@@ -1,1 +1,134 @@
-.
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+        body {
+            overflow: hidden;
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            text-rendering: optimizeLegibility;
+        }
+
+        .screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow: hidden;
+            font-size: default;
+            padding: 1em;
+            box-sizing: border-box;
+            color: white;
+            cursor: default;
+            width: 100vw;
+        }
+
+        .screen:nth-child(1) {
+            background-image: url(https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_1280.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            z-index: 1;
+        }
+
+        .screen:nth-child(2) {
+            background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 2;
+        }
+
+        .screen:nth-child(3) {
+            background: transparent;
+            z-index: 3;
+        }
+
+        span {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4.6vh;
+        }
+
+        h1:nth-child(1) {
+            margin-top: 0px;
+        }
+
+        h2 {
+            font-size: 3.5vh;
+        }
+
+        img {
+            height: 24vh;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid blue;
+            border-radius: 5px;
+            background-color: blue;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+        .inner {
+            padding: 10px 10px 30px 10px;
+            border-radius: 20px;
+            /* border: .1px solid rgb(20, 20, 20); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen"></div>
+    <div class="screen"></div>
+    <div class="screen">
+        <span>
+            <img src="https://i.ibb.co/k43t9Ct/Logo-GSV-removebg.png" alt="Logo-GSV-removebg">
+            <div class="inner">
+                <h1>
+                    Induction Wasn't Enough?
+                </h1>
+                <br>
+                <a href="">
+                    <button>
+                        Download the presentation now!
+                    </button>
+                </a>
+            </div>
+            <div class="inner">
+                <h1>
+                    Are You Ready to Participate in Our Events?
+                </h1>
+                <h2>
+                    Or better yet, join the team!
+                </h2>
+                <a href="https://forms.gle/8JeMxLz831XXnDi8A">
+                    <button>
+                        Fill out the form now!
+                    </button>
+                </a>
+            </div>
+        </span>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
