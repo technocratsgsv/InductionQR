@@ -47,6 +47,11 @@
         .screen:nth-child(3) {
             background: transparent;
             z-index: 3;
+
+            height: 100vh;
+            /* Set a specific height for scrolling */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
         }
 
         span {
@@ -54,7 +59,7 @@
         }
 
         h1 {
-            font-size: 4.6vh;
+            font-size: 4.3vh;
         }
 
         h1:nth-child(1) {
@@ -62,7 +67,7 @@
         }
 
         h2 {
-            font-size: 3.5vh;
+            font-size: 3.2vh;
         }
 
         img {
@@ -71,8 +76,8 @@
 
         button {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 1.3vh;
+            font-size: 2vh;
             font-weight: bold;
             text-align: center;
             text-decoration: none;
@@ -86,9 +91,11 @@
         button:hover {
             background-color: black;
         }
-
+        .padding-under{
+            margin-bottom: 3vh;
+        }
         .inner {
-            padding: 10px 10px 30px 10px;
+            padding: 1.3vh;
             border-radius: 20px;
             /* border: .1px solid rgb(20, 20, 20); */
         }
@@ -105,14 +112,14 @@
                 <h1>
                     Induction Wasn't Enough?
                 </h1>
-                <br>
                 <a href="">
                     <button>
                         Download the presentation now!
                     </button>
                 </a>
             </div>
-            <div class="inner">
+            <br>
+            <div class="inner padding-under">
                 <h1>
                     Are You Ready to Participate in Our Events?
                 </h1>
@@ -120,7 +127,7 @@
                     Or better yet, join the team!
                 </h2>
                 <a href="https://forms.gle/8JeMxLz831XXnDi8A">
-                    <button>
+                    <button >
                         Fill out the form now!
                     </button>
                 </a>
